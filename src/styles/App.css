@@ -1,16 +1,30 @@
 h1 {
     color: #27aedb;
     text-align: center;
-    }
-    
+}
 
-button{
+
+button {
     color: #27aedb;
     text-align: center;
     justify-content: center;
     align-items: center;
+    margin: 10px;
+
 }
 
-.bg-pink{
-	background-color:pink;
+.bg-pink {
+    background-color: pink;
 }
+
+.list {
+
+    /* width: 200px; */
+
+
+}
+
+/* span {
+    margin-right: 70px;
+    margin-top: 10px;
+} */

@@ -8,17 +8,22 @@ function App() {
 	const [doArray, setDoarray] = useState([]);
 	const [editing, setEditing] = useState(false);
 
-	const [btnStatus, setBtnStatus] = useState(false);
+	const [btnStatus, setBtnStatus] = useState(true);
 
 	const valueSetter = (event) => {
 
 		setText(event.target.value);
 	}
 	const valueSetter2 = (event) => {
-		if (event.target.value != "") {
+		console.log(11111111111111);
+		if (event.target.value.length != 0) {
+
+			setText2(event.target.value);
 			setBtnStatus(false);
+			return;
 		}
-		setText2(event.target.value);
+
+
 
 	}
 	const input2_valueSetter = (identity) => {
@@ -50,7 +55,7 @@ function App() {
 	const deletehandle = (identity) => {
 		identity = identity.split(" ");
 		identity = identity[identity.length - 1];
-		let arr = doArray.map((element, index) => {
+		let arr = doArray.filter((element, index) => {
 			if (index != identity) {
 				return element;
 			}

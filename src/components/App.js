@@ -66,6 +66,7 @@ function App() {
 		if (text.length != 0) {
 			setDoarray([...doArray, text]);
 		}
+		setText("");
 	}
 	const edithandle = () => {
 		setEditing(true);
